@@ -1047,6 +1047,36 @@ section.bg_color {
 	-webkit-animation-name: fadeInDownBig;
 	animation-name: fadeInDownBig;
 }
+ /********************map area**************/
+ .js-map {
+  height: 100%;
+  min-height: 35em;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 58em) {
+
+.js-map::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: transparent;
+}
+}
+
+.js-map .gm-style-iw > div {
+  font-size: 1.2em;
+  overflow: hidden;
+  height: auto;
+  line-height: 1.6;
+}
+
+.js-map .gmnoscreen,
+ .js-map .gm-style-cc { display: none !important; }
 /***********horizontal line style******/
 
 hr.style-eight {
